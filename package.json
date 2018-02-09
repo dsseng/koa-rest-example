@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/sh7dm/koa-rest-example"
   },
-  "license": "",
+  "license": "CC BY 4.0",
   "dependencies": {
     "@koa/cors": "^2.2.1",
     "koa": "^2.4.1",
