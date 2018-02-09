@@ -1,5 +1,5 @@
 {
-  "name": "rest-tut",
+  "name": "koa-rest-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,12 @@
     "test": "snyk test"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "sh7dm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sh7dm/koa-rest-example"
+  },
+  "license": "",
   "dependencies": {
     "@koa/cors": "^2.2.1",
     "koa": "^2.4.1",
