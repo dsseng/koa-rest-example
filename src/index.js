@@ -21,10 +21,10 @@ router
     })
 
 app
-    .use(helmet())
-    .use(cors())
-    .use(logger())
-    .use(koaBody())
-    .use(router.routes())
+    .use(helmet()) // Some safety
+    .use(cors()) // CORS 
+    .use(logger()) // morgan-like logger
+    .use(koaBody()) // body-parser for koa
+    .use(router.routes()) // Router
     .use(router.allowedMethods())
-    .listen(3000)
+    .listen(3000) // Or use http(s) server with app.callback()
