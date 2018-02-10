@@ -20,6 +20,12 @@
     "type": "git",
     "url": "https://github.com/sh7dm/koa-rest-example"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
   "license": "CC BY 4.0",
   "dependencies": {
     "@koa/cors": "^2.2.1",
@@ -35,6 +41,7 @@
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "backpack-core": "^0.5.0",
+    "husky": "^0.15.0-rc.8",
     "snyk": "^1.69.7"
   }
 }
