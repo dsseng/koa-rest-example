@@ -20,11 +20,6 @@
     "type": "git",
     "url": "https://github.com/sh7dm/koa-rest-example"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  },
   "license": "CC BY 4.0",
   "dependencies": {
     "@koa/cors": "^2.2.1",
