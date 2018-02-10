@@ -1,14 +1,20 @@
 {
   "name": "koa-rest-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple REST API using Koa",
   "main": "index.js",
   "scripts": {
     "dev": "backpack",
     "build": "backpack build",
     "test": "snyk test"
   },
-  "keywords": [],
+  "keywords": [
+    "koa",
+    "backpack",
+    "jwt",
+    "api",
+    "rest"
+  ],
   "author": "sh7dm",
   "repository": {
     "type": "git",
