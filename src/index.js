@@ -17,7 +17,6 @@ async function auth (ctx, next) {
         jwt.verify(ctx.request.body.token, 'shared secret', (err, payload) => {
             if (err) {
                 ctx.throw(401)
-                next()
             } else {
                 ctx.payload = payload
                 next()
@@ -60,9 +59,7 @@ router
                     token: jwt.sign({ username: user.username }, 'shared secret', { expiresIn: 60 * 60 })
                 }
             } else {
-                ctx.body = {
-                    code: 401
-                }
+                ctx.throw(401)
             }
         }
     })
